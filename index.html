@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+<div class="post-excerpt">
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <p><small>{{ post.date | date: '%Y-%m-%d' }}</small></p>
+  {{ post.excerpt }}
+</div>
+{% endfor %}

@@ -1,0 +1,12 @@
+title: "KAWF777's blog"
+email: "keyfans5100@outlook.com"
+description: ""
+baseurl: ""
+url: "https://your-github-username.github.io"
+theme: minima
+markdown: kramdown
+show_excerpts: true
+excerpt_separator: "<!--more-->"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

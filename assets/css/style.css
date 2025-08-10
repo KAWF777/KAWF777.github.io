@@ -1,0 +1,24 @@
+
+body {
+    background-image: url('../img/parchment.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', '宋体', serif;
+    color: #4b3621;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+}
+a {
+    color: #5b3a29;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.post-excerpt {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #a67b5b;
+    padding-bottom: 1rem;
+}
