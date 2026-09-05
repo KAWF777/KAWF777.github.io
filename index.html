@@ -1,10 +1,5 @@
 ---
 layout: default
 ---
-{% for post in site.posts %}
-<div class="post-excerpt">
-  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-  <p><small>{{ post.date | date: '%Y-%m-%d' }}</small></p>
-  {{ post.excerpt }}
-</div>
-{% endfor %}
+<section class="intro"><p class="eyebrow">KOON / 随写随想</p><h1>把想法写下来，<br>让日子有迹可循<span>。</span></h1><p class="description">记录日常，整理思考。<br>在这里，留一点时间给文字，也给自己。</p><p class="note">● &nbsp; 一个慢慢生长的个人博客</p></section>
+<section aria-labelledby="posts-heading"><div class="section-heading"><h2 id="posts-heading">最新文章 <small>{{ site.posts | size }}</small></h2><a href="{{ '/archive/' | relative_url }}">全部归档 ↗</a></div>{% for post in site.posts %}<article class="post-excerpt"><div class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><span>{{ post.categories | first | default: '随笔' }}</span></div><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><p class="excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p><a class="read-more" href="{{ post.url | relative_url }}" aria-label="阅读全文：{{ post.title | escape }}">阅读全文 ↗</a></article>{% endfor %}</section><aside class="end-note"><span>“</span><p>有些想法，写下来才算真正遇见。</p></aside>

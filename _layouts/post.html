@@ -1,8 +1,4 @@
 ---
 layout: default
 ---
-<article>
-  <h2>{{ page.title }}</h2>
-  <p><small>{{ page.date | date: '%Y-%m-%d' }}</small></p>
-  <div>{{ content }}</div>
-</article>
+<article class="reading"><a class="back" href="{{ '/' | relative_url }}">← 返回文章</a><header class="article-header"><div class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time><span>{{ page.categories | first | default: '随笔' }}</span></div><h1>{{ page.title | escape }}</h1><p class="byline">文 / koon</p></header><div class="prose">{{ content }}</div><p class="article-end">— 写于 {{ page.date | date: '%Y 年 %m 月 %d 日' }} —</p><section class="reply" aria-labelledby="reply-heading"><div class="reply-heading"><h2 id="reply-heading">留下一点回响</h2><span class="badge">即将开放</span></div><p id="reply-note">回复功能还在准备中，暂时无法填写或提交。谢谢你的阅读。</p><label for="reply">你的回复</label><textarea id="reply" rows="4" disabled aria-describedby="reply-note" placeholder="这里为未来的交流留一个位置……"></textarea><div class="reply-bottom"><span>回复功能 · 后续开放</span><button type="button" disabled>提交回复 ↗</button></div></section></article>

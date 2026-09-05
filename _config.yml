@@ -1,12 +1,11 @@
-title: "KAWF777's blog"
-email: "keyfans5100@outlook.com"
-description: ""
+title: "koon的博客"
+description: "记录日常，整理思考，让文字慢慢生长。"
 baseurl: ""
-url: "https://your-github-username.github.io"
-theme: minima
+url: "https://kawf777.github.io"
+lang: zh-CN
+timezone: Asia/Shanghai
+author: koon
 markdown: kramdown
-show_excerpts: true
 excerpt_separator: "<!--more-->"
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+plugins: [jekyll-feed, jekyll-seo-tag]
+exclude: [README.md]
